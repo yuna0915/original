@@ -1,2 +1,6 @@
-<h1>Homepages#new</h1>
-<p>Find me in app/views/homepages/new.html.erb</p>
+<%= form_with modei:@original do |f| do %>
+  <%= f.text_field:title %>
+  <%= f.text_area:main %>
+  <%= f.text_area:sub %>
+  <%= f.submit '送信' %>
+<% end %>
